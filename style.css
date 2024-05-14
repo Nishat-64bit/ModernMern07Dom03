@@ -1,0 +1,44 @@
+/* custom css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 3rem 0;
+}
+h3{
+    font-weight: lighter;
+}
+
+.commingSoon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countDown{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+    column-gap: 10;
+    text-align: center;
+    padding: 10px 20px;
+    background: red;
+    border: 3px solid black;
+}
+
+
+.day,.hour,.minute,.second{
+    font-size: 2.2rem;
+    
+}
+
