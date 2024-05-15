@@ -1,5 +1,5 @@
     ------------------------------------------------------------------    
-                know about js Dom 03 with Project  <Start>
+                know about js Dom 03 with Project COunterApp & Basic To Do and color Generator  <Start>
     -------------------------------------------------------------------
     // know about basic counter App
     
@@ -182,6 +182,40 @@
     }
        setInterval(countdown,1000)
      // countdown()
+
+            //revise 2.0 ====== color code generator 
+
+        // cath all the variable 
+        const Gbtn = document.querySelector(".Gbtn")
+        const Cbtn = document.querySelector(".Cbtn")
+        const outputBox = document.querySelector(".outputBox")
+        const colorCode = document.querySelector(".colorCode")
+
+        // gbtn er add event 
+        Gbtn.addEventListener("click",function(){
+            const RandomColor = generatorColor()
+            outputBox.style.backgroundColor = RandomColor
+            colorCode.value = RandomColor
+
+        // cbtn er add event 
+        Cbtn.addEventListener("click",function(){
+            navigator.clipboard.writeText(RandomColor)
+            Cbtn.innerHTML= "Copied"
+        })
+        })
+
+        // generatorcolor function
+        function generatorColor() {
+            const red = Math.round(Math.random()*255);
+            const green = Math.round(Math.random()*255) ;
+            const blue = Math.round(Math.random()*255);
+
+            // rgb format rgb(255,25,24)
+            const rgb = `RGB(${red},${green},${blue})`
+            // console.log(rgb);
+            return rgb
+        }
+
     ------------------------------------------------------------------    
-                know about js Dom 03 with Project <End>
+                know about js Dom 03 with Project (COunterApp & Basic To Do and color Generator) <End>
     -------------------------------------------------------------------

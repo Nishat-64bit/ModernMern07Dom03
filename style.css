@@ -4,11 +4,53 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ul,li,ol{
+    list-style: none;
 }
-
-h2{
+.itembox{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    row-gap: 20px;
+}
+#input{
+    padding: 10px 40px;
+    outline-color: red;
+}
+.btn{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.box{
+    width: 25%;
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.205);
+    /* jehoto ami cie box er maje scorll hove  */
+    overflow-y: scroll;
+    
+}
+.box_item{
+    width: inherit;
+    height: 20px;
+    background-color: aqua;
+    margin: 5px;
+    text-align: center;
+}
+.boxitemSpan{
+    color: blue;
+}
+/* h2{
     font-size: 3rem;
     font-weight: lighter;
     padding: 3rem 0;
@@ -38,7 +80,7 @@ h3{
 
 
 .day,.hour,.minute,.second{
-    font-size: 2.2rem;
+    font-size: 2.2rem; */
     
-}
+/* } */
 

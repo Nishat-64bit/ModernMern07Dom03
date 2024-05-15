@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li,ol{
+    list-style: none;
+}
+.itembox{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    row-gap: 20px;
+}
+
+.Gbtn{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.Cbtn{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.outputBox{
+    width: 50%;
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.205);
+    /* jehoto ami cie box er maje scorll hove  */
+    /* overflow-y: scroll;
+     */
+}
+
+.colorCode{
+    padding: 10px 30px;
+}
