@@ -104,8 +104,7 @@
 
 
 
-        /// counter App  // MAin 
-
+        ///=======================  counter App  ================================
     const countdown = ()=>{
 
     const counter = new Date('june 14, 2024  0:00:00').getTime() // [je day te apnar occation ase suppose 30 day por  theke 30 din aagie dorlam] // get time mile second e prokas kore 
@@ -145,7 +144,7 @@
      // console.log(18 % 2) jodi perfectly bag jai taile modulas / reminder 0
      // console.log(17 % 2)  ekon baag jacce na , tar manne modulad 8 * 2  = 16  bagses 1  modulas 1
 
-     //========================== for digital dropout schol 
+     //========================== revise 2.0 for digital dropout schol 
 
      const countdown = ()=>{
          const counter = new Date("May 16 , 2024 0:00:00").getTime() // getTime give milisecond value :      1715796000000 
@@ -183,7 +182,7 @@
        setInterval(countdown,1000)
      // countdown()
 
-            //revise 2.0 ====== color code generator 
+            ==========================//revise 2.0 ====== color code generator 
 
         // cath all the variable 
         const Gbtn = document.querySelector(".Gbtn")
