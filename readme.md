@@ -136,7 +136,7 @@
     document.querySelector(".minute").innerHTML = textMinute
     document.querySelector(".second").innerHTML = textSecond
 
-}
+    }
      // countdown() // ekane ami ekbar call korci deke se static hoe ase 
 
      setInterval(countdown,1000)
@@ -215,6 +215,27 @@
             return rgb
         }
 
+     // ==================== revise 2.0 == to-do list add =======================
+
+        const input = document.querySelector("#input")
+        const button = document.querySelector(".btn")
+        const box = document.querySelector(".box")
+
+
+        // make some tag
+        const ul = document.createElement('ul')
+
+        // append 
+        box.appendChild(ul)
+
+        // make eventlistener
+
+        button.addEventListener("click",function(){
+        const liitem = `<li class="box_item"><span class = "boxitemSpan">${input.value}</span></li>`
+        ul.innerHTML += liitem // por por change er jonno 
+        input.value = `` // text lekar por add btn e clik korle chole jabe.
+        console.log(liitem);
+        })
     ------------------------------------------------------------------    
                 know about js Dom 03 with Project (COunterApp & Basic To Do and color Generator) <End>
     -------------------------------------------------------------------
